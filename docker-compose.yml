@@ -2,8 +2,8 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ./customer     # Updated to point to the customer directory
-      dockerfile: Dockerfile.customer
+      context: ./player     # Updated to point to the player directory
+      dockerfile: Dockerfile.player
     ports:
       - "3000:80"             # Map port 80 in the container to port 3000 on the host
     depends_on:
